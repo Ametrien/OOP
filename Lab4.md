@@ -1,7 +1,7 @@
 
 Lab4.java:
 
-```
+```java
 package University;
 
 import java.io.BufferedReader;
@@ -45,7 +45,7 @@ public class Lab4 {
 
 one.expression.txt:
 
-```
+```java
 2 * 4 + (3 +6 * 9 -    12 * (2*9 - 15))  + 2 +(-4)*((2 - 15))
 2x - 3y + 25 / (2+5)*12 - ((29*4-2) + 32) -14
 2x - 3y + 25 / (-((29*4-2) + 32) -14 - (2+5)*12
