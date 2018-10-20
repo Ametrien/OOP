@@ -72,6 +72,13 @@ Patient.java
 package com.utm.app;
 
 public interface Patient extends Person {
+    String id = "";
+    String sickness = "";
+    String prescriptions = "";
+    String allergies = "";
+    String specialReqs = "";
+    Date accepted = new Date(2018, 10, 10); // deprecated constructor
+
 }
 ```
 
@@ -87,7 +94,7 @@ public interface Person {
     String midleTitle = "";
     String familyTitle = "";
     String name = title + " " + givenTitle + " " + midleTitle + " " + familyTitle;
-    Date birthDate = new Date(2018, 04, 04); // deprecated constructor
+    Date birthDate = new Date(1998, 04, 04); // deprecated constructor
     char gender = 'f';
     String homeAddress = "";
     String phone = "";
@@ -109,6 +116,10 @@ Staff.java
 package com.utm.app;
 
 public interface Staff extends Departament, Person {
+    Date joined = new Date(2017, 12, 07); // deprecated constructor
+    String education = "";
+    String certification = "";
+    String languages = "";
 }
 ```
 
