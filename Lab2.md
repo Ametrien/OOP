@@ -1,5 +1,5 @@
 #### Task #1 
-```
+```java
 
 /**
  * Write a class Box and instatiate an object via its constructor. The Box
@@ -66,7 +66,7 @@ public class Box {
 
 #### Task #2
 
-```
+```java
 /**
  * Create a class Queue and instantiate 2 objects of this type. Each queue
  * should have as state the number of elements from it and can be created via
