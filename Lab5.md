@@ -1,5 +1,5 @@
 A.java
-```
+```java
 package University.lab5;
 
 /**
@@ -26,7 +26,7 @@ public class A {
 ```
 
 B.java
-```
+```java
 package University.lab5;
 
 public class B extends  A{
@@ -41,7 +41,7 @@ public class B extends  A{
 ```
 
 C.java
-```
+```java
 package University.lab5;
 
 public class C extends  B{
@@ -55,7 +55,7 @@ public class C extends  B{
 ```
 
 D.java
-```
+```java
 package University.lab5;
 
 public class D extends C{
@@ -69,7 +69,7 @@ public class D extends C{
 ```
 
 E.java
-```
+```java
 package University.lab5;
 
 public class E extends D{
@@ -83,7 +83,7 @@ public class E extends D{
 ```
 
 F.java
-```
+```java
 package University.lab5;
 
 public class F extends E{
@@ -97,7 +97,7 @@ public class F extends E{
 ```
 
 G.java
-```
+```java
 package University.lab5;
 
 public class G extends F{
@@ -111,7 +111,7 @@ public class G extends F{
 ```
 
 H.java
-```
+```java
 package University.lab5;
 
 public class H extends G {
@@ -126,7 +126,7 @@ public class H extends G {
 ```
 
 I.java
-```
+```java
 package University.lab5;
 
 public class I extends H {
@@ -140,7 +140,7 @@ public class I extends H {
 ```
 
 J.java
-```
+```java
 package University.lab5;
 
 public class J extends I {
@@ -168,7 +168,7 @@ public class J extends I {
 
 
 X.java
-```
+```java
 package University.lab5;
 
 public class X {
