@@ -15,7 +15,7 @@ import java.io.IOException;
  */
 public class Lab4 {
 
-    private static boolean countParanteses(String text) {
+    private static boolean countParentheses(String text) {
         int counter = 0;
         for (char ch : text.toCharArray()) {
             if (ch == '(') counter++;
