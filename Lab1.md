@@ -1,6 +1,6 @@
 
 #### Task #1 
-```
+```java
 /*Create a program where you can manipulate a monitor object which has color, 
  * dimensions and resolution. Implement actions of creation, update of monitor 
  * properties and comparison between two monitors.*/
@@ -100,7 +100,7 @@ public class Monitor {
 
 #### Task #2
 
-```
+```java
 
 /*Create a program where you can create and have some actions to the following objects: 
  * university and student. You should be able to create students that have name, age and 
