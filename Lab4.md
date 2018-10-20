@@ -43,7 +43,7 @@ public class Lab4 {
 
 ```
 
-one.expression.txt:
+one_expression.txt:
 
 ```
 2 * 4 + (3 +6 * 9 -    12 * (2*9 - 15))  + 2 +(-4)*((2 - 15))
