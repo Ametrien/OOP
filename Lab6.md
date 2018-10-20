@@ -4,7 +4,7 @@
 
 AdministrativeStaff.java
  
-``` 
+```java
 package com.utm.app;
 
 public class AdministrativeStaff implements Staff {
@@ -12,7 +12,7 @@ public class AdministrativeStaff implements Staff {
 ```
 Department.java
 
-```
+```java
 package com.utm.app;
 
 public interface Departament extends Hospital{
@@ -20,19 +20,18 @@ public interface Departament extends Hospital{
 ```
 Doctor.java
 
-```
+```java
 package com.utm.app;
 
 public class Doctor implements OperationsStaff {
-    public void doSmth(){
-        System.out.println("Hello from Doctor" );
-    }
+    String speciality = "";
+    String locations = "";
 }
 ```
 
 FrontDeskStaff.java
 
-```
+```java
 package com.utm.app;
 
 public class FrontDeskStaff extends AdministrativeStaff {
@@ -41,7 +40,7 @@ public class FrontDeskStaff extends AdministrativeStaff {
 
 Hospital.java
 
-```
+```java
 package com.utm.app;
 
 public interface Hospital {
@@ -53,7 +52,7 @@ public interface Hospital {
 
 Nurse.java
 
-```
+```java
 package com.utm.app;
 
 public class Nurse implements OperationsStaff {
@@ -61,7 +60,7 @@ public class Nurse implements OperationsStaff {
 ```
 OperationsStaff.java
 
-```
+```java
 package com.utm.app;
 
 public interface OperationsStaff extends Patient, Staff {
@@ -69,7 +68,7 @@ public interface OperationsStaff extends Patient, Staff {
 ```
 
 Patient.java
-```
+```java
 package com.utm.app;
 
 public interface Patient extends Person {
@@ -77,7 +76,7 @@ public interface Patient extends Person {
 ```
 
 Person.java
-```
+```java
 package com.utm.app;
 
 import java.util.Date;
@@ -97,20 +96,16 @@ public interface Person {
 
 Receptionist.java
 
-```
+```java
 package com.utm.app;
 
 public class Receptionist extends FrontDeskStaff {
-    public static void main(String[] args) {
-        Doctor d = new Doctor();
-        d.doSmth();
-    }
 }
 ```
 
 Staff.java
 
-```
+```java
 package com.utm.app;
 
 public interface Staff extends Departament, Person {
@@ -119,7 +114,7 @@ public interface Staff extends Departament, Person {
 
 Surgeon.java
 
-```
+```java
 package com.utm.app;
 
 public class Surgeon extends Doctor {
@@ -128,7 +123,7 @@ public class Surgeon extends Doctor {
 
 SurgicalTehnologist.java
 
-```
+```java
 package com.utm.app;
 
 public class SurgicalTehnologist extends Tehnologist {
@@ -136,7 +131,7 @@ public class SurgicalTehnologist extends Tehnologist {
 ```
 TehnicalStaff.java
 
-```
+```java
 package com.utm.app;
 
 public interface TehnicalStaff extends Staff {
@@ -144,7 +139,7 @@ public interface TehnicalStaff extends Staff {
 ```
 
 Tehnician.java
-```
+```java
 package com.utm.app;
 
 public class Tehnician implements TehnicalStaff {
@@ -152,7 +147,7 @@ public class Tehnician implements TehnicalStaff {
 ```
 
 Tehnologist.java
-```
+```java
 package com.utm.app;
 
 public class Tehnologist implements TehnicalStaff {
