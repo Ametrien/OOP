@@ -1,3 +1,5 @@
+Implement the classes in any OOP progamming language according to the following class diagram:
+
 ![Image 1](https://www.uml-diagrams.org/examples/class-example-hospital-organization.png)
 
 ![Image 2](https://github.com/AshleyBlair/OOP/blob/images/Organization.png)
