@@ -35,7 +35,7 @@ public class Lab4 {
         String st;
         while ((st = br.readLine()) != null) {
             System.out.println("Expression: " + st);
-            System.out.println("Parentheses are put correct in this expression: " + countParanteses(st));
+            System.out.println("Parentheses are put correct in this expression: " + countParentheses(st));
         }
     }
 
