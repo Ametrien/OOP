@@ -1,6 +1,7 @@
 #### Task #1 
 ```java
 
+
 /**
  * Write a class Box and instatiate an object via its constructor. The Box
  * object should have three instance variables of floating number type(double):
