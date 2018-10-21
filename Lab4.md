@@ -28,7 +28,7 @@ public class Lab4 {
     }
 
     public static void main(String[] args) throws IOException {
-        File file = new File("C:\\Users\\Anastasia\\IdeaProjects\\University\\one_expression.txt");
+        File file = new File("C:\\Users\\Anastasia\\IdeaProjects\\University\\expressions.txt");
 
         BufferedReader br = new BufferedReader(new FileReader(file));
 
@@ -43,7 +43,60 @@ public class Lab4 {
 
 ```
 
-one_expression.txt:
+Lab4.cpp:
+
+```cpp
+#include<iostream>
+#include<stack>
+#include<string>
+#include <fstream>
+
+using namespace std;
+
+bool Parantheses(char opening,char closing){
+    if(opening == '(' && closing == ')') return true;
+    return false;
+}
+bool AreParanthesesBalanced(string exp){
+    stack<char> S;
+    
+    for(int i = 0; i < exp.length(); i++){
+        if(exp[i] == '(')
+            S.push(exp[i]);
+        else if(exp[i] == ')'){
+            if(S.empty() || !Parantheses(S.top(),exp[i]))
+                return false;
+            else
+                S.pop();
+        }
+    }
+    return S.empty() ? true:false;
+}
+
+int main(){
+    std::string line_;
+    ifstream file_("expressions.txt");
+    
+    if(file_.is_open()){
+        while (getline(file_, line_))
+        {
+            std::cout<<line_<< '\n';
+            if(AreParanthesesBalanced(line_))
+                cout<<"Balanced \n";
+            else
+                cout<<"Not balanced \n";
+        }
+        file_.close();
+    }
+    else
+        std::cout<<"The file could not be opened due to an error."<<'\n';
+    std::cin.get();
+    return 0;
+}
+
+```
+
+expressions.txt:
 
 ```
 2 * 4 + (3 +6 * 9 -    12 * (2*9 - 15))  + 2 +(-4)*((2 - 15))
