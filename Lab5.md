@@ -6,10 +6,10 @@ package University.lab5;
  * Task1
  * Create 10 classes with their names as first 10 aphabetical letters (A, B, C, D, ... , J).
  * Each next class inherits from previous letter class (ex: B inherits from A, C inherits from B ...).
- * <p>
+ * 
  * Each class should have their own String property with corresponding letter as their refference
  * (ex: A - public String a; public B - String b; ... J - public String j;).
- * <p>
+ * 
  * Create by an object of each class type and print it in console in a clever way (such that to be clear each objects states).
  */
 
