@@ -13,6 +13,7 @@ import java.io.IOException;
  * Write a program which would find if a mathematical expression is
  * correct from the point of view of the parentheses within it.
  */
+ 
 public class Lab4 {
 
     private static boolean countParentheses(String text) {
@@ -51,6 +52,11 @@ Lab4.cpp:
 #include<string>
 #include <fstream>
 
+/**
+ * Write a program which would find if a mathematical expression is
+ * correct from the point of view of the parentheses within it.
+ */
+ 
 using namespace std;
 
 bool Parantheses(char opening,char closing){
