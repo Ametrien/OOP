@@ -51,9 +51,9 @@ Lab4.cpp:
 ```cpp
 
 
-#include<iostream>
-#include<stack>
-#include<string>
+#include <iostream>
+#include <stack>
+#include <string>
 #include <fstream>
 
 /**
