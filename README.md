@@ -1,4 +1,4 @@
-# OOP (labs)
+# OOP (laboratory works)
 
 ### [Lab 1](https://github.com/AnastasiaFAF172/OOP/blob/master/Lab1.md) ✅
 ### [Lab 2](https://github.com/AnastasiaFAF172/OOP/blob/master/Lab2.md) ✅ 
