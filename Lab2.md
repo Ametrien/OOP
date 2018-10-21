@@ -12,6 +12,7 @@
  * each attribute. The box must have also 2 methods for calculation of its
  * surface area and volume.
  */
+ 
 public class Box {
 	private double height;
 	private double width;
@@ -67,6 +68,8 @@ public class Box {
 #### Task #2
 
 ```java
+
+
 /**
  * Create a class Queue and instantiate 2 objects of this type. Each queue
  * should have as state the number of elements from it and can be created via
@@ -76,12 +79,10 @@ public class Box {
  * Also implement two methods which should determine if the queue is empty or
  * full. (isEmpty(), isFull()).
  */
+ 
 public class Queue {
-	// Указатель на первый элемент
     private ObjectBox head;
-    // Указатель на последний элемент
     private ObjectBox tail;
-    // Поле для хранения размера очереди
     private int size;
  
     public Queue(){
@@ -97,44 +98,29 @@ public class Queue {
     	else size = 0;
     }
     
-    public void push(Object obj) { // добавление элемента
-        // Сразу создаем вспомогательный объект и помещаем новый элемент в него
+    public void push(Object obj) { 
         ObjectBox ob = new ObjectBox();
         ob.setObject(obj);
-        // Если очередь пустая - в ней еще нет элементов
         if (head == null) {
-            // Теперь наша голова указывает на наш первый элемент
             head = ob;
         } else {
-            // Если это не первый элемент, то надо, чтобы последний элемент в очереди
-            // указывал на вновь прибывший элемент
             tail.setNext(ob);
         }
-        // И в любом случае нам надо наш "хвост" переместить на новый элемент
-        // Если это первый элемент, то "голова" и "хвост" будут указывать на один и тот же элемент
         tail = ob;
-        // Увеличиваем размер нашей очереди
         size++;
     }
  
    
     public Object get(int index) {
-        // Если нет элементов или индекс больше размера или индекс меньше 0
         if(size == 0 || index >= size || index < 0) {
             return null;
         }
-        // Устанавлваем указатель, который будем перемещать на "голову"
         ObjectBox current = head;
-        // В этом случае позиция равну 0
         int pos = 0;
-        // Пока позиция не достигла нужного индекса
         while(pos < index) {
-            // Перемещаемся на следующий элемент
             current = current.getNext();
-            // И увеличиваем позицию
             pos++;
         }
-        // Мы дошли до нужной позиции и теперь можем вернуть элемент
         Object obj = current.getObject();
         return obj;
     }
@@ -148,17 +134,12 @@ public class Queue {
     }
     
     public boolean isFull() {
-        return (size == 10); // я подумала, что возьму за основу классический LinkedList, а там по умолчанию 10 эл-тов с возможностью динамического расширения
-        //я хз как иначе проверить полная ли очередь, тк это динамическая структура данных
+        return (size == 10);
     }
     
-    // Наш вспомогательный класс будет закрыт от посторонних глаз, для хранения элементов очереди 
     private class ObjectBox
     {
-        // Поле для хранения объекта
-        private Object object; // Object подходит для хранения любых типов данных, тк он является суперклассом для всех типов данных
-        // Поле для указания на следующий элемент в цепочке.
-        // Если оно равно NULL - значит это последний элемент
+        private Object object; 
         private ObjectBox next;
  
         public Object getObject() {
