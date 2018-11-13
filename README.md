@@ -6,3 +6,4 @@
 ### [Lab 5](https://github.com/AnastasiaFAF172/OOP/blob/master/Lab5.md) ✅ 
 ### [Lab 6](https://github.com/AnastasiaFAF172/OOP/blob/master/Lab6.md) ✅ 
 ### [Lab 7](https://github.com/AnastasiaFAF172/OOP/blob/master/Lab7.md) ✅
+### [Lab 8](https://github.com/AnastasiaFAF172/OOP/blob/master/Lab8.md) ✅
